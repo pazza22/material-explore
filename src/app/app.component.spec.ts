@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule, MatCheckboxModule, MatCardModule} from '@angular/material';
+import {MatSliderModule} from '@angular/material/slider';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,7 +11,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
-      imports: [BrowserModule, FormsModule, MatButtonModule, MatCheckboxModule, MatCardModule]
+      imports: [BrowserModule, FormsModule, MatButtonModule, MatCheckboxModule, MatCardModule, MatSliderModule]
     }).compileComponents();
   }));
   it('should create the app', async(() => {

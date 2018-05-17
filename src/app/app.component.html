@@ -18,7 +18,19 @@
         <span *ngIf = "s.value">{{s.name}} &nbsp; </span>
       </div>
     </section>
-
-
   </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <h2>How awesome is this?</h2>
+
+    <section>
+      <mat-slider thumbLabel min="0" max="1" step="0.05" value="0.1" [(ngModel)]="awesomeOpacity"></mat-slider>
+    </section>
+
+    <section>
+      <div style = 'color: black;' [style.opacity] = awesomeOpacity>Awesome</div>
+    </section>
+
+      </mat-card-content>
 </mat-card>

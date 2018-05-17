@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'app';
   userSkills: SkillsKeyPair[] = [];
+  awesomeOpacity: number = 0;
 
   ngOnInit() {
     this.userSkills.push(new SkillsKeyPair('JS', true));
